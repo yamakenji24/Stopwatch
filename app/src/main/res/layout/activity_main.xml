@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:text="00:00:00"
+            android:id="@+id/timeText" android:textSize="60sp"
+            android:layout_marginTop="321dp"
+            android:layout_marginBottom="120dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/start" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.497"/>
+    <Button
+            android:text="start"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:id="@+id/start"
+            app:layout_constraintEnd_toStartOf="@+id/stop"
+            android:layout_marginBottom="180dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="5dp"
+    />
+    <Button
+            android:text="stop"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:id="@+id/stop"
+            app:layout_constraintStart_toEndOf="@+id/start"
+            app:layout_constraintEnd_toStartOf="@+id/reset" android:layout_marginEnd="14dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="180dp"/>
+    <Button
+            android:text="reset"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:id="@+id/reset"
+            app:layout_constraintStart_toEndOf="@+id/stop"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="180dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
